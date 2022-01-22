@@ -1,0 +1,159 @@
+#bloginput{
+    background: #8080804d;
+    height: 100vh;   
+}
+#bloginput .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 1rem;
+    border-bottom: 1px solid #8080804f;
+    background: white;
+}
+#bloginput .header button{
+    border: none;
+    padding: 10px 1rem;
+    font-size: 15px;
+    font-weight: bold;
+    background: #3b49df;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#bloginput .header button:hover{
+    background: #6671e9;
+}
+#bloginput .header h3 span{
+    background: black;
+    color: white;
+    padding: 5px 1rem;
+    border-radius: 5px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#bloginput .header h2{
+    color: #3b49df;
+}
+#bloginput .main{
+    min-height: 90vh;
+    padding: 2rem;
+}
+#bloginput .main .nav{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+#bloginput .main .nav :nth-child(1){
+    border-right: 1px solid #3b49df;
+}
+#bloginput .main .nav h3{
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+    font-weight: 300;
+    transition: 0.5s ease-in-out;
+}
+#bloginput .main .nav .active{
+    color: #3b49df;
+    font-weight:bold;
+}
+#bloginput .main .input{
+    background: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 72vh;
+}
+#bloginput .main .input button{
+    width: 20%;
+    margin-bottom: 1rem;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    /* color: white; */
+    font-weight: bold;
+    background: #fbfafa;
+    border: 1px ps;
+    border: 1px solid #80808042;
+    font-size: 15px;
+    cursor: pointer;
+}
+#bloginput .main .input input{
+    margin-bottom: 1rem;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #80808063;
+    outline: none;
+}
+#bloginput .main .input .title{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid #80808033;
+    border-radius: 5px;
+    outline: none;
+}
+#bloginput .main .input textarea{
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    outline: none;
+    margin: 0px;
+    width: 100%;
+}
+#bloginput .main .input .inputImage{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#bloginput .main .input .inputImage button{
+    margin-bottom: 0;
+    margin-right: 1rem;
+    outline: none;
+}
+#bloginput .main .preview{
+    min-height: 72vh;
+    background: white;
+    margin-top: 1rem;
+    border-radius: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+}
+#bloginput .outputtags{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#bloginput .outputtags span{
+    background: #4caf50b5;
+    padding: 0px 10px;
+    border: 1px solid green;
+    border-radius: 25px;
+    font-weight: 100;
+    margin-right: 1rem;
+    color: white;
+    font-weight: 600;
+}
+#bloginput .main .input .inputImage input{
+    width: 100%;
+    margin-bottom: 0;
+}
+#bloginput .main .input .inputImage button{
+    margin-bottom: 0;
+    margin-right: 0;
+    outline: none;
+    width: 10%;
+    margin-left: 1rem;
+}

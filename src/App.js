@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Homepage from './Component/Homepage';
+import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import Blogpage from './Component/Blogpage';
+import Bloginput from './Component/Bloginput';
+import Login from './Component/Login';
+import Register from './Component/Register';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Homepage} />
+          <Route exact path='/#/' component={Homepage} />
+          <Route exact path='/blog' component={Blogpage} />
+          <Route exact path='/createblog' component={Bloginput} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/register' component={Register} />
+        </Switch>
+      </Router>
     </div>
   );
 }
